@@ -27,6 +27,14 @@ call cadastroPetExame(8, 10, 2);
 call cadastroPetExame(6, 1, 5);
 call cadastroPetExame(4, 2, 8);
 call cadastroPetExame(4, 1, 8);
+call cadastroPetExame(10, 2, 9);
+call cadastroPetExame(11, 8, 1);
+call cadastroPetExame(12, 5, 1);
+call cadastroPetExame(5, 1, 1);
+call cadastroPetExame(7,3, 4);
+call cadastroPetExame(6, 6, 2);
+call cadastroPetExame(2, 2, 5);
+call cadastroPetExame(2, 9, 7);
 
 delimiter $$ 
 create procedure alterarStatusExame(in pet_exame_id int)
@@ -48,7 +56,16 @@ begin
 end
 $$ delimiter ;
 
+call alterarStatusExame(1);
+call alterarStatusExame(4);
+call alterarStatusExame(5);
 call alterarStatusExame(6);
+call alterarStatusExame(8);
+call alterarStatusExame(10);
+call alterarStatusExame(13);
+call alterarStatusExame(14);
+call alterarStatusExame(3);
+call alterarStatusExame(18);
 
 select * from pet_exame_veterinario;
 

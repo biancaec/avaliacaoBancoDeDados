@@ -51,5 +51,3 @@ begin
 end
 $$ delimiter ;
 
-
-call removerTutor(2);
