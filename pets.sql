@@ -43,5 +43,4 @@ begin
     where id = pet_id;
 end
 $$ delimiter ;
-
 select * from pets;

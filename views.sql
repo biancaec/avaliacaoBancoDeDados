@@ -42,4 +42,10 @@ create view totalExamesPorPet as
     
 select * from totalExamesPorPet;
     
-
+create view tutorEFelino as
+	select tutores.nome as tutor, pets.nome as felino
+    from tutores
+    inner join pets on pets.id_tutor = tutores.id
+    where pets.especie like "Felina";
+    
+select * from tutorEFelino;
