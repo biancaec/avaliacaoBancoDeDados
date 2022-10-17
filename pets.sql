@@ -44,7 +44,6 @@ begin
 end
 $$ delimiter ;
 
-
 create view idadesPets as
 	select pets.nome, truncate(datediff(curdate(), pets.nascimento)/365,0) as idade
     from pets;	
@@ -63,4 +62,4 @@ end
 $$ delimiter ;
 
 call petMaisExperiente();
-select * from pets;
+
